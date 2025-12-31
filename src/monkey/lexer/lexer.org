@@ -1,0 +1,14 @@
+#+title: Golang Interpreter Token Package
+#+author: Magd Aref
+
+* Token
+
+#+transclude: [[./lexer.go]]  :src go
+
+** Lexer Struct
+- position: a pointer to the current position
+- readPosition: a pointer to the next read position
+
+** Future Challenges
+- Support UTF-8 with runes
+- Add line and column number information to the lexer for debugging?

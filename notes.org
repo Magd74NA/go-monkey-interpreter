@@ -1,0 +1,23 @@
+#+title: Golang Interpreter
+#+author: Magd Aref
+
+* TODO Document my Go Interpreter Journey
+
+** Evaluating Go Inline Example
+#+BEGIN_SRC go :imports "fmt"
+fmt.Println("Hello")
+#+END_SRC
+
+#+RESULTS:
+: Hello
+
+** Go inline evaluation instructions
+1. Write the begin src block as above and add :imports '("import 1" "import 2" "import 3" "etc.")
+   - You may have to run the command (require 'ob-go)?
+2. Write source code (all code is automatically wrapped in a main function)
+3. Write +END_SRC block
+4. Use C-c C-c (Control-c Control-c) to Evaluate the block. Results will be inserted in a +RESULTS Block
+
+** Linked Notes
+- [[./src/monkey/token/token.org][Token Definition]]
+- [[./src/monkey/lexer/lexer.org][Lexer]]

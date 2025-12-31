@@ -1,0 +1,6 @@
+#+title: Golang Interpreter Token Package
+#+author: Magd Aref
+
+* Token
+
+#+transclude: [[./token.go]] :src go
